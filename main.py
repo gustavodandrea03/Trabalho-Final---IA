@@ -6,8 +6,8 @@ from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 
 # Caminhos
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CAMINHO_MODELO = os.path.join(BASE_DIR, "models", "dog_cat_classifier.keras")
+DIRETORIO_BASE = os.path.dirname(os.path.abspath(__file__))
+CAMINHO_MODELO = os.path.join(DIRETORIO_BASE, "models", "dog_cat_classifier.keras")
 if not os.path.exists(CAMINHO_MODELO):
     raise FileNotFoundError(f"Modelo não encontrado no caminho: {CAMINHO_MODELO}")
 
